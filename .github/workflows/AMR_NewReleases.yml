@@ -3,7 +3,8 @@ name: Apple Music New Releases
 on:
   schedule:
     - cron: '1 12 * * *' # Every day at 12:01 UTC (China time 20:01) for new releases
-
+  workflow_dispatch: # Allow manual trigger
+  
 env:
   tg_channel_id: ${{ secrets.TG_CHANNEL_ID }}
   tg_token: ${{ secrets.TG_TOKEN }}

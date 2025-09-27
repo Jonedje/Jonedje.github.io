@@ -3,6 +3,7 @@ name: Apple Music Releases LookApp
 on:
   schedule:
     - cron: '10 12 * * *' # Every day at 12:10 UTC (China time 20:10) for artist updates
+  workflow_dispatch: # Allow manual trigger
 
 env:
   tg_channel_id: ${{ secrets.TG_CHANNEL_ID }}
